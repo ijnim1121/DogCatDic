@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chatbot</title>
+        <link rel="stylesheet" href="chatbot.css">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
+    </head>
+    <body>
+        <div id="chatBar">
+            <button id="chatButton" type="button" class="collapsible">Start chat!
+                <i id="chatIcon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+
+            <div id="contents">
+                <div id="fullChatBlock">
+                    <div id="outerContainer">
+                        <div id="chatContainer">
+                            <div id="chatBox">
+                                <h5 id="chatTimestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <div id="chatBarInputBlock">
+                                <div id="input">
+                                    <input id="textInput" class="inputBox" type="text" name="msg"
+                                    placeholder="텍스트를 입력하고 전송 버튼을 누러주세요.">
+                                    <p></p>
+                                </div>
+
+                                <div id="chatBarIcons">
+                                    <i id="chatIcon"  style="color: #333;" class="fa fa-fw fa-heart"
+                                    onclick='heartButton()'></i>
+                                    <i id="chatIcon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick='sendButton()'></i>
+                                </div>
+                            </div>
+                            <div id="chatBarBottom">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="chat.js"></script>
+        <script src="reply.js"></script>
+
+    </body>
+</html>

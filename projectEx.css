@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#333;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#menu {
+    font:bold 16px "malgun gothic";
+    width:1300px;
+    height:50px;
+    background: #fffcbf ;
+    color:black;
+    line-height: 50px; 
+    margin:0 auto;
+    text-align: center;
+}
+
+#menu > ul > li {
+    float:left;
+    width:170px;
+    position:relative;
+    margin-left: 70px;
+    
+}
+#menu > ul > li > ul {
+    width:170px;
+    display:none;
+    position: absolute;
+    font-size:14px;
+    background: rgb(195, 247, 147);
+}
+#menu > ul > li:hover > ul {
+    display:block;
+    
+}
+#menu > ul > li > ul > li:hover {
+    background: rgb(243, 236, 162);
+    transition: ease 1s;
+    }
+#login{
+    
+    margin-right:10px;
+}
+#logout{
+    
+    margin-right:10px;
+}
+#loginText{
+    font-size:13px;
+}
+#signup{
+    
+    margin-right:10px;
+}
+#signupText{
+    font-size:13px;
+}
+#icon{
+    text-align:right;
+}
+#chatBar{
+    position: fixed;
+    bottom:0;
+    right: 50px;
+    box-shadow: 0 8 16px 0 rgba(0,0,0.2)
+}
+.collapsible{
+    background-color:rgba(127, 244, 255, 0.826);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align:left;
+    outline: none;
+    font-size:18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid #fff;
+    border-bottom: none;
+}
+#mongpic{
+	margin:auto;
+}
